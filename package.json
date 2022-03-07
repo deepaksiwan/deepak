@@ -2,11 +2,12 @@
   "name": "kickrtechnology",
   "version": "4.1.1",
   "description": "Ehospi Admin",
-  "homepage": ".",
+  "homepage": "https://deepaksiwan.github.io/deepakkickr",
   "license": "MIT",
   "author": "Deepak kumar",
   "scripts": {
-    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "build:n17": "react-scripts --openssl-legacy-provider build",
     "changelog": "auto-changelog --starting-version 4.1.0 --commit-limit false --hide-credit",
@@ -69,7 +70,8 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
     "run": "^1.4.0",
-    "simplebar-react": "^2.3.6"
+    "simplebar-react": "^2.3.6",
+    "yarn.lock": "0.0.1-security"
   },
   "devDependencies": {
     "auto-changelog": "~2.3.0",
