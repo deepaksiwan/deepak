@@ -2,11 +2,12 @@
   "name": "kickrtechnology",
   "version": "4.1.1",
   "description": "Ehospi Admin",
-  "homepage": ".",
+  "homepage": "https://deepaksiwan.github.io/demodeploy",
   "license": "MIT",
   "author": "Deepak kumar",
   "scripts": {
-    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "build:n17": "react-scripts --openssl-legacy-provider build",
     "changelog": "auto-changelog --starting-version 4.1.0 --commit-limit false --hide-credit",
